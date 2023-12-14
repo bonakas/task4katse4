@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@300&family=Kalnia&display=swap');
+body {
+    background-color:rgba(46, 145, 43, 0.459) ;
+}
+
+.heading {
+    color: rgb(61, 37, 194); 
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    animation: header;
+    animation-duration: 3s;
+    position: relative;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+    
+}
+
+@keyframes header {
+    0%{top: -300px}
+    100% {top: 5px}
+}
+
+.ingredients {
+    
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: left;
+    
+}
+
+
+
+.ingredients-table {
+    margin: 0 auto;
+    border-spacing: 10px;
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+    animation: table;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+        
+}
+
+@keyframes table {
+    0%{left: -1000px}
+    85%{left: 20px;}
+    100% {left: 0;}
+}
+
+.instructions {
+    border: 0px solid black;
+    margin: 0 auto;
+    width: 50%;
+    font-family: 'Kalnia', serif;
+    color: rgb(71, 25, 199);
+    opacity: 0;
+    animation: instructions;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    
+}
+
+
+@keyframes instructions {
+    0%{opacity: 0;}
+    100% {opacity: 1;}
+}
+.instructions ol {
+    border: 1px solid rgb(229, 255, 0);
+    margin: 0 auto;
+    width: 75%;
+    
+}
+
+.pilt {
+    img{
+        opacity: 0;
+        display: block;
+        max-width: 30%;
+        max-height: 30%;
+        height: auto;
+        margin: 0 auto;
+        animation: pilt;
+        animation-duration: 6s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+
+    }
+    
+    
+}
+
+@keyframes pilt {
+    0%{opacity: 0;}
+    100% {opacity: 1;}
+}
+.footer {
+    font-family: 'Kalnia', serif;
+    margin: 0 auto;
+    text-align: center;
+}
